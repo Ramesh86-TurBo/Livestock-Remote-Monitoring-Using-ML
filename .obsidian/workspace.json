@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Collection and Cleaning/Sample Dataset(for testing purpose).md",
+                "file": "Data Preprocessing 1/steps for reference.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data Collection and Cleaning/Sample Dataset(for testing purpose).md",
+                "file": "Data Preprocessing 1/steps for reference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data Collection and Cleaning/Sample Dataset(for testing purpose).md",
+                "file": "Data Preprocessing 1/steps for reference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Collection and Cleaning/Sample Dataset(for testing purpose).md"
+                "file": "Data Preprocessing 1/steps for reference.md"
               }
             }
           }
@@ -159,8 +159,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35f75687bda95a26",
+  "active": "a31d4088219946ea",
   "lastOpenFiles": [
+    "Data Preprocessing 1/Feature Extraction.md",
+    "Data Preprocessing 1/steps for reference.md",
+    "Data Collection and Cleaning/Sample Dataset(for testing purpose).md",
+    "Data Collection and Cleaning/Program/testDataset/dataInfo.py",
+    "Data Collection and Cleaning/Program/testDataset/combined_dataset.csv",
+    "Data Collection and Cleaning/Program/testDataset/combine.py",
+    "Data Collection and Cleaning/Sensor System.md",
+    "Overview.md",
+    "Data Collection and Cleaning/Data Format and Conversion.md",
+    "README.md",
     "Data Collection and Cleaning/Program/testDataset/testData3.csv",
     "Data Collection and Cleaning/Program/testDataset/testData2.csv",
     "Data Collection and Cleaning/Program/testDataset/testData1.csv",
@@ -168,20 +178,10 @@
     "Data Collection and Cleaning/Program/New folder",
     "Data Preprocessing 1/program/FAE85310",
     "Data Preprocessing 1/program/testData3.csv",
-    "Data Preprocessing 1/program/9E785310",
-    "Data Preprocessing 1/program/E72E4310",
-    "Data Preprocessing 1/program/testData2.csv",
-    "Data Preprocessing 1/program/439D4310",
-    "Data Collection and Cleaning/Sensor System.md",
-    "Data Collection and Cleaning/Data Format and Conversion.md",
-    "Data Collection and Cleaning/Sample Dataset(for testing purpose).md",
-    "Data Preprocessing 1/Feature Extraction.md",
     "Data Preprocessing 2/Data Labellling.md",
     "Data Preprocessing 2/Feature Extraction.md",
     "Data Preprocessing 2/Time Windowing.md",
     "Remote Monitoring/Anomaly Detection For Remote Monitoring.md",
-    "Overview.md",
-    "README.md",
     "Data Collection and Cleaning/Program/oldProgram/Figure_1.png",
     "DataCollection/Program/Figure_1.png",
     "DataCollection/Figure_1.png",
