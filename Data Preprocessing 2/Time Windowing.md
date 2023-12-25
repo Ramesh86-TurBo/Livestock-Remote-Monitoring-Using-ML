@@ -1,6 +1,0 @@
-Time windowing involves dividing a continuous time series into smaller, overlapping or non-overlapping segments or "windows." In the context of behavior classification, it is used to extract features from specific time intervals, enabling the model to capture patterns related to different activities. Windowing is done because behavior may vary over time, and analyzing smaller segments helps in capturing the dynamics.
-
-The window size is a crucial parameter and depends on the characteristics of the behavior. For activities with more movement, like grazing and walking, a smaller window capturing finer details might be suitable. Conversely, for lying and standing, a larger window might be appropriate as they involve less movement. The best window size is often determined through experimentation and observing the model's performance with different window sizes. For example, you could try a window size of 30 seconds for grazing and walking, and 60 seconds for lying and standing based on your observations.
-
-It's essential to strike a balance – too short a window might miss crucial patterns, while too long a window might dilute the distinctive features. Experimentation and understanding the nature of the behaviors are key to determining the optimal window size for accurate feature extraction and subsequent classification.
-

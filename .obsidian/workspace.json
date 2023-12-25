@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Preprocessing 1/steps for reference.md",
+                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data Preprocessing 1/steps for reference.md",
+                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data Preprocessing 1/steps for reference.md",
+                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Preprocessing 1/steps for reference.md"
+                "file": "DataPreprocessing/SampleDataset(for testing purpose).md"
               }
             }
           }
@@ -159,25 +159,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a31d4088219946ea",
+  "active": "35f75687bda95a26",
   "lastOpenFiles": [
+    "DataPreprocessing/Program/DataCollectionAndConversion/oldPrograms",
+    "DataPreprocessing/Program/DataCollectionAndConversion/New folder",
+    "DataPreprocessing/DataConversion.md",
+    "DataPreprocessing/DataCollection.md",
+    "DataPreprocessing/SampleDataset(for testing purpose).md",
+    "DataPreprocessing/Sample Dataset(for testing purpose).md",
+    "DataPreprocessing/Program/DataCollectionAndConversion/testData3.csv",
+    "DataPreprocessing/Program/DataCollectionAndConversion/testData2.csv",
+    "DataPreprocessing/Program/DataCollectionAndConversion/testData1.csv",
+    "DataPreprocessing/Program/DataCollectionAndConversion/dataInfo.py",
+    "DataPreprocessing/Program/DataCollectionAndConversion/combined_dataset.csv",
+    "DataPreprocessing/Program/DataCollectionAndConversion/combine.py",
+    "DataPreprocessing/DataCollectionandSensorSystem.md",
+    "DataPreprocessing/exp1/Feature Extraction.md",
+    "Model Selection Training Evaluation 1/Procedure.md",
+    "DataPreprocessing/exp2/Time Windowing.md",
+    "DataPreprocessing/exp2/Feature Extraction.md",
+    "DataPreprocessing/exp2/Data Labellling.md",
+    "DataPreprocessing/exp2",
+    "DataPreprocessing/exp1",
+    "DataPreprocessing/mark2",
+    "DataPreprocessing/Program/DataCollectionAndConversion/Figure_1.png",
+    "Data Collection and Cleaning/Data Preprocessing 1/Feature Extraction.md",
     "Data Preprocessing 1/Feature Extraction.md",
+    "Data Collection and Cleaning/Program/DataCollectionAndConversion/Figure_1.png",
+    "Data Collection and Cleaning/Program/DataConversion/Figure_1.png",
     "Data Preprocessing 1/steps for reference.md",
     "Data Collection and Cleaning/Sample Dataset(for testing purpose).md",
-    "Data Collection and Cleaning/Program/testDataset/dataInfo.py",
-    "Data Collection and Cleaning/Program/testDataset/combined_dataset.csv",
-    "Data Collection and Cleaning/Program/testDataset/combine.py",
     "Data Collection and Cleaning/Sensor System.md",
     "Overview.md",
     "Data Collection and Cleaning/Data Format and Conversion.md",
     "README.md",
-    "Data Collection and Cleaning/Program/testDataset/testData3.csv",
-    "Data Collection and Cleaning/Program/testDataset/testData2.csv",
-    "Data Collection and Cleaning/Program/testDataset/testData1.csv",
-    "Data Collection and Cleaning/Program/testDataset",
-    "Data Collection and Cleaning/Program/New folder",
-    "Data Preprocessing 1/program/FAE85310",
-    "Data Preprocessing 1/program/testData3.csv",
     "Data Preprocessing 2/Data Labellling.md",
     "Data Preprocessing 2/Feature Extraction.md",
     "Data Preprocessing 2/Time Windowing.md",
