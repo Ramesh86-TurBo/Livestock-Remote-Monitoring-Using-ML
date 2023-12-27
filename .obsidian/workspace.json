@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
+                "file": "DataPreprocessing/exp2/Time Windowing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fa638374680b9c7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DataPreprocessing/exp2/Time Windowing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "DataPreprocessing/exp2/Time Windowing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "DataPreprocessing/exp2/Time Windowing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "DataPreprocessing/exp2/Time Windowing.md"
               }
             }
           }
@@ -161,27 +173,28 @@
   },
   "active": "35f75687bda95a26",
   "lastOpenFiles": [
-    "Model Selection Training Evaluation 1/program/final.csv",
-    "DataPreprocessing/Program/DataCollectionAndConversion/oldPrograms",
-    "DataPreprocessing/Program/DataCollectionAndConversion/New folder",
-    "DataPreprocessing/DataConversion.md",
-    "DataPreprocessing/DataCollection.md",
-    "DataPreprocessing/SampleDataset(for testing purpose).md",
-    "DataPreprocessing/Sample Dataset(for testing purpose).md",
-    "DataPreprocessing/Program/DataCollectionAndConversion/testData3.csv",
-    "DataPreprocessing/Program/DataCollectionAndConversion/testData2.csv",
-    "DataPreprocessing/Program/DataCollectionAndConversion/testData1.csv",
-    "DataPreprocessing/Program/DataCollectionAndConversion/dataInfo.py",
-    "DataPreprocessing/Program/DataCollectionAndConversion/combined_dataset.csv",
-    "DataPreprocessing/Program/DataCollectionAndConversion/combine.py",
-    "DataPreprocessing/DataCollectionandSensorSystem.md",
-    "DataPreprocessing/exp1/Feature Extraction.md",
-    "Model Selection Training Evaluation 1/Procedure.md",
-    "DataPreprocessing/exp2/Time Windowing.md",
+    "DataPreprocessing/exp2/program/main.py",
     "DataPreprocessing/exp2/Feature Extraction.md",
+    "DataPreprocessing/exp2/Time Windowing.md",
+    "DataPreprocessing/exp2/program/final3.csv",
+    "DataPreprocessing/exp2/program",
+    "DataPreprocessing/exp2/New folder",
+    "DataPreprocessing/Program/DatasetCleaning/window.csv",
+    "DataPreprocessing/Program/DatasetCleaning/test.py",
+    "DataPreprocessing/Program/DatasetCleaning/plotData.py",
+    "DataPreprocessing/Program/DatasetCleaning/dataInfo.py",
+    "DataPreprocessing/Program/dataInfo.py",
+    "DataPreprocessing/Program/DatasetConversion/dataInfo.py",
+    "DataPreprocessing/Program/DatasetCleaning/final3.csv",
     "DataPreprocessing/exp2/Data Labellling.md",
-    "DataPreprocessing/exp2",
-    "DataPreprocessing/exp1",
+    "DataPreprocessing/exp1/Feature Extraction.md",
+    "DataPreprocessing/SampleDataset(for testing purpose).md",
+    "DataPreprocessing/DataCollection.md",
+    "DataPreprocessing/DataConversion.md",
+    "Model Selection Training Evaluation 1/Procedure.md",
+    "README.md",
+    "DataPreprocessing/Sample Dataset(for testing purpose).md",
+    "DataPreprocessing/DataCollectionandSensorSystem.md",
     "DataPreprocessing/Program/DataCollectionAndConversion/Figure_1.png",
     "Data Collection and Cleaning/Data Preprocessing 1/Feature Extraction.md",
     "Data Preprocessing 1/Feature Extraction.md",
@@ -192,7 +205,6 @@
     "Data Collection and Cleaning/Sensor System.md",
     "Overview.md",
     "Data Collection and Cleaning/Data Format and Conversion.md",
-    "README.md",
     "Data Preprocessing 2/Data Labellling.md",
     "Data Preprocessing 2/Feature Extraction.md",
     "Data Preprocessing 2/Time Windowing.md",

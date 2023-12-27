@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the combined dataset (replace 'combined_dataset.csv' with your actual file name)
-combined_dataset = pd.read_csv('combined_dataset.csv')
+combined_dataset = pd.read_csv('final3.csv')
 
 # Convert 'time_stamp' column to datetime format, handling errors
 combined_dataset['time_stamp'] = pd.to_datetime(combined_dataset['time_stamp'], errors='coerce')
@@ -15,7 +15,6 @@ time_diff = combined_dataset['time_stamp'].diff().dt.total_seconds()
 # Display total time duration in hours
 total_time_duration_hours = time_diff.sum() / 3600  # Convert seconds to hours
 print(f"Total time duration: {total_time_duration_hours:.2f} hours")
-
 
 # Display the number of rows
 num_rows = combined_dataset.shape[0]
