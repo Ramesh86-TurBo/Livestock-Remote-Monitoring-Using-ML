@@ -1,2 +1,3 @@
 # Livestock-Remote-Monitoring-Using-ML
-will be added later
+
+Traditionally, farmers are unable to pay enough attention to individual livestock. An increasing number of sensors are being used to monitor livestock behavior, early disease detection, and evaluation of animal welfare. In this project, the main focus will be on remote monitoring of the cattle by dveloping a accurate machine learning model will be used to identify multiple unitary behaviors of cattle recorded by livestock sensor and later performing the anomaly detection for remote monitoring pupose.The project is divided into two phases, the first stage of the project will be development of the machine learning model for predicting the normal behaviors of the cattle.The second phase will be to designing anomaly detection mechanism for remote monitoring that will be triggered if cattle is showing improper behaviour, hence, farmer will be notified about this and it will help him take necessary steps.
