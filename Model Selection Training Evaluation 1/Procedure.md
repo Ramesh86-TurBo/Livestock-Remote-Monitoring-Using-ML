@@ -1,146 +1,130 @@
-after the feature extraction, selection, further step involves:
+procedure after obtaining the labelled dataset:
 
-1. **Data Splitting:**
-   - Split your dataset into training and testing sets. The training set is used to train the model, while the testing set helps evaluate its performance on unseen data.
-
-2. **Data Normalization (if not done during feature extraction):**
-   - Normalize or scale your features if needed. This is important for algorithms sensitive to the scale of input features.
-
-3. **Model Selection:**
-   - Choose a machine learning model suitable for your task. For classification tasks like behavior prediction, algorithms such as Random Forests, Support Vector Machines, or Neural Networks are commonly used.
-
-4. **Model Training:**
-   - Train your selected model using the training set. During training, the model learns to make predictions based on the labeled features.
-
-5. **Model Evaluation:**
-   - Evaluate the trained model's performance using the testing set. Common evaluation metrics for classification tasks include accuracy, precision, recall, and F1 score.
-
-**Program:**
+1. **Include libraries, Load the dataset, Separate Features and Labels:**
+   - Create feature matrix `X` containing accelerometer readings (columns: x, y, z) and target vector `y` containing behavior labels
+**example:**
 
 ```python
 
+#importing libraies
+
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load your labeled dataset
-dataset = pd.read_csv('your_labeled_dataset.csv')  # Replace 'your_labeled_dataset.csv' with your actual dataset file
+
+dataset = pd.read_csv('final.csv')
 
 # Separate features (X) and labels (y)
-X = dataset[['x_0', 'x_29', 'x_59', 'x_89', 'x_119', 'x_149', 'x_179', 'x_209', 'x_239', 'x_269',
-             'y_0', 'y_29', 'y_59', 'y_89', 'y_119', 'y_149', 'y_179', 'y_209', 'y_239', 'y_269',
-             'z_0', 'z_29', 'z_59', 'z_89', 'z_119', 'z_149', 'z_179', 'z_209', 'z_239', 'z_269']]
 
-y = dataset[['sitting', 'standing', 'walking', 'grazing']]  # Replace 'behavior' with the actual column name containing behavior labels
+X = dataset[['x', 'y', 'z']]
+
+y = dataset[['sitting', 'standing', 'walking', 'grazing']]
+
+```
+**explaination:**
+a. **Features (X):**
+`X` is a matrix containing the accelerometer readings as features. These readings include columns for the x, y, and z axes at different time points.
+Each column corresponds to a specific time point and axis in the accelerometer data.
+
+b. **Labels (y):**
+`y` is a matrix containing the behavioral labels corresponding to each set of accelerometer readings.
+The selected columns for labels are 'sitting', 'standing', 'walking', and 'grazing'.
+Each row in this matrix corresponds to a set of accelerometer readings, and the labels indicate the behavior associated with that set.
+
+
+2. **Data Splitting:**
+   - Split the dataset into training and testing sets using `train_test_split`. This helps assess the model's performance on unseen data.
+
+**example:**
+```python
 
 # Split the dataset into training and testing sets
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Standardize features using StandardScaler
+```
+**explaination:**
+- `X`: Features (independent variables) of your dataset.
+- `y`: Labels (dependent variable) of your dataset.
+- `test_size`: This parameter determines the proportion of the dataset that will be used for testing. In this case, it's set to `0.2`, which means 20% of the data will be used for testing, and the remaining 80% will be used for training.
+- `random_state`: This parameter ensures reproducibility. Setting a fixed random seed (`random_state`) ensures that every time you run this code, the split will be the same. This is useful for reproducibility and debugging.
+
+3. **Data Normalization and Standardization(scaling techniques):**
+- Data normalization and standardization are preprocessing techniques used to scale the numerical features of a dataset. They are often performed before training a machine learning model. The choice between normalization and standardization depends on the characteristics of your data and the requirements of the algorithm you are using.
+
+a). **Min-Max Scaling (Normalization):**
+   - **Range Preservation:** Min-Max scaling is suitable when you want to preserve the original range of the data. It scales the features to a specific range, often [0, 1], making it useful when the algorithm is sensitive to the original data range.
+   - **Neural Networks and Image Processing:** It is commonly used in neural networks, image processing, and situations where the algorithm's performance benefits from having input features within a consistent, bounded range.
+   - If you are dealing with sensor inputs from cattle of different sizes and you want to mitigate the impact of these size differences on the accuracy of your model, you can consider using a normalization technique that takes into account the varying scales of the features. One such technique is Min-Max Scaling (also known as Min-Max Normalization).
+   
+```python
+from sklearn.preprocessing import MinMaxScaler
+
+# Assuming 'X' is your feature matrix
+scaler = MinMaxScaler()
+X_normalized = scaler.fit_transform(X)
+```
+**explaination:**
+
+1. **Import MinMaxScaler:**
+   ```python
+   from sklearn.preprocessing import MinMaxScaler
+   ```
+   Import the MinMaxScaler class from scikit-learn's preprocessing module.
+
+2. **Create MinMaxScaler Object:**
+   ```python
+   scaler = MinMaxScaler()
+   ```
+   Create an instance of the MinMaxScaler. This object will be used to scale the data.
+
+3. **Fit and Transform:**
+   ```python
+   X_normalized = scaler.fit_transform(X)
+   ```
+   The `fit_transform` method fits the scaler to the data (`X`) and transforms it. It scales each feature independently, ensuring that they all fall within the specified range (by default, between 0 and 1).
+
+After this process, `X_normalized` contains the normalized version of the original feature matrix `X`. The normalization is done to ensure that the scale of different features does not impact the performance of machine learning models, especially those sensitive to the scale of input features.
+
+
+b). **Z-Score Standardization (StandardScaler):**
+   - **Mean and Standard Deviation:** Z-Score standardization is useful when you want to center the data around zero and scale it based on the mean and standard deviation. This method assumes that the data approximately follows a normal distribution.
+   - **Algorithms Sensitive to Scale:** It is often used with algorithms that rely on the mean and variance of the features, such as clustering methods, support vector machines, and algorithms using gradient descent optimization.
+   
+```python
+from sklearn.preprocessing import StandardScaler
+
+# Assuming 'X' is your feature matrix
 scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
-
-# Initialize a RandomForestClassifier
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-
-# Train the model
-model.fit(X_train_scaled, y_train)
-
-# Make predictions on the test set
-y_pred = model.predict(X_test_scaled)
-
-# Evaluate the model
-accuracy = accuracy_score(y_test, y_pred)
-classification_rep = classification_report(y_test, y_pred)
-
-# Print the results
-print(f'Accuracy: {accuracy:.2f}')
-print('Classification Report:')
-print(classification_rep)
+X_standardized = scaler.fit_transform(X)
 
 ```
 
-**Program Explaination:**
+- If your dataset contains features with different scales and you want to maintain the interpretability of the original values, use **Normalization**.
+- If your dataset has features with different means and you want to center them around zero, use **Standardization**.
+- **Before Training:** Data normalization or standardization should be done before training your machine learning model. This ensures that all features contribute equally to the learning process.
+ therefore i will be using MinMax normalization technique for feature scaling.
+ 
+1. **Model Selection:**
 
-1. **Import Libraries:**
-   - Import the necessary libraries, including pandas for data manipulation, train_test_split for splitting the dataset, StandardScaler for feature scaling, RandomForestClassifier for building a random forest model, and metrics from scikit-learn for model evaluation.
+Model selection is the process of choosing the most appropriate machine learning model or algorithm for a given problem based on various criteria. It involves selecting the best model architecture, hyperparameters, and features to maximize the predictive performance of the model. Model selection is a crucial step in the machine learning workflow, as the choice of model can significantly impact the model's ability to generalize well to new, unseen data.
 
-2. **Load Dataset:**
-   - Load your dataset from a CSV file into a Pandas DataFrame. Replace 'your_dataset.csv' with the actual filename.
 
-3. **Separate Features and Labels:**
-   - Create feature matrix `X` containing accelerometer readings (columns: x_0 to z_269) and target vector `y` containing behavior labels
-   
-    1. **Features (X):**
-    
-    - `X` is a matrix containing the accelerometer readings as features. These readings include columns for the x, y, and z axes at different time points.
-    - The specific columns selected from the dataset are 'x_0', 'x_29', 'x_59', ..., 'z_239', 'z_269'.
-    - Each column corresponds to a specific time point and axis in the accelerometer data.
-    
-    2. **Labels (y):**
-    
-    - `y` is a matrix containing the behavioral labels corresponding to each set of accelerometer readings.
-    - The selected columns for labels are 'sitting', 'standing', 'walking', and 'grazing'.
-    - Each row in this matrix corresponds to a set of accelerometer readings, and the labels indicate the behavior associated with that set.
 
-4. **Data Splitting:**
-   - Split the dataset into training and testing sets using `train_test_split`. This helps assess the model's performance on unseen data.
 
-5. **Data Normalization:**
-   - Use StandardScaler to standardize (normalize) the features. Standardization ensures that all features have a mean of 0 and a standard deviation of 1, which can improve model performance.
-   - Data normalization is a preprocessing technique used to scale and standardize the features of a dataset. Its main goals are to ensure that all features contribute equally to the learning process and to prevent features with larger scales from dominating the algorithm. This is crucial for machine learning models that rely on distance metrics or gradient-based optimization.
 
-Methods of data normalization include:
-
-1. **Min-Max Scaling (Normalization):** Scales features to a specific range, often [0, 1], using the formula:
-   \[ X_{\text{normalized}} = \frac{{X - X_{\text{min}}}}{{X_{\text{max}} - X_{\text{min}}}} \]
-
-2. **Z-Score Standardization (StandardScaler):** Standardizes features to have a mean of 0 and a standard deviation of 1 using the formula:
-   \[ X_{\text{standardized}} = \frac{{X - \text{mean}(X)}}{{\text{std}(X)}} \]
-
- - Normalization is typically done during the preprocessing stage before feeding data into machine learning algorithms. It helps improve the convergence and performance of models, especially for algorithms sensitive to the scale of input features. Normalization is crucial when features have different units or scales, ensuring fair and effective comparison between them.
- - The choice between Min-Max scaling and Z-Score standardization depends on the characteristics of the data and the requirements of the machine learning model:
-
-1. **Min-Max Scaling:**
-   - **Range Preservation:** Min-Max scaling is suitable when you want to preserve the original range of the data. It scales the features to a specific range, often [0, 1], making it useful when the algorithm is sensitive to the original data range.
-   - **Neural Networks and Image Processing:** It is commonly used in neural networks, image processing, and situations where the algorithm's performance benefits from having input features within a consistent, bounded range.
-
-2. **Z-Score Standardization (StandardScaler):**
-   - **Mean and Standard Deviation:** Z-Score standardization is useful when you want to center the data around zero and scale it based on the mean and standard deviation. This method assumes that the data approximately follows a normal distribution.
-   - **Algorithms Sensitive to Scale:** It is often used with algorithms that rely on the mean and variance of the features, such as clustering methods, support vector machines, and algorithms using gradient descent optimization.
-
-1. **Initialization of StandardScaler:**
-   ```python
-   scaler = StandardScaler()
-   ```
-   This creates an instance of the `StandardScaler` class. The `StandardScaler` is used to standardize features by removing the mean and scaling to unit variance.
-
-2. **Scaling the Training Set:**
-   ```python
-   X_train_scaled = scaler.fit_transform(X_train)
-   ```
-   The `fit_transform` method calculates the mean and standard deviation of each feature in the training set (`X_train`) and then scales the features accordingly. It's essential to use the same scaling parameters (mean and standard deviation) for both the training and testing sets to ensure consistency.
-
-3. **Scaling the Test Set:**
-   ```python
-   X_test_scaled = scaler.transform(X_test)
-   ```
-   The `transform` method applies the scaling parameters learned from the training set to the test set. This ensures that the scaling of the test set is consistent with the training set.
-
-6. **Model Selection:**
-   - Choose a machine learning model; here, a RandomForestClassifier with 100 trees is used. The `random_state` parameter ensures reproducibility.
-
-7. **Model Training:**
+3. **Model Training:**
    - Fit the model to the training data using `model.fit`.
 
-8. **Make Predictions:**
+4. **Make Predictions:**
    - Use the trained model to make predictions on the scaled test set (`X_test_scaled`).
 
-9. **Model Evaluation:**
+5. **Model Evaluation:**
    - Calculate accuracy and generate a classification report using scikit-learn metrics. The classification report includes precision, recall, F1-score, and support for each class.
 
-10. **Print Results:**
+6. **Print Results:**
     - Display the accuracy and classification report to assess the model's performance on the test set.

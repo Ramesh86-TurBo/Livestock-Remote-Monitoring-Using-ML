@@ -4,7 +4,6 @@ So input features to the model will be x, y, z (accelerometer data)and it will l
 
 **dataset structure:**
 
-
 |     x    |     y    |     z    | sitting | standing | walking | grazing |
 |----------|----------|----------|---------|----------|---------|---------|
 |  0.438   |  0.844   |  0.309   |    0    |     0    |    1    |    0    |
