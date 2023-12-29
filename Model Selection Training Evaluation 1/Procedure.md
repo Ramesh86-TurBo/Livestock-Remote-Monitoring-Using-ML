@@ -107,7 +107,8 @@ X_standardized = scaler.fit_transform(X)
 - If your dataset contains features with different scales and you want to maintain the interpretability of the original values, use **Normalization**.
 - If your dataset has features with different means and you want to center them around zero, use **Standardization**.
 - **Before Training:** Data normalization or standardization should be done before training your machine learning model. This ensures that all features contribute equally to the learning process.
- therefore i will be using MinMax normalization technique for feature scaling.
+
+ ***therefore i will be using MinMax normalization technique for feature scaling.***
  
 1. **Model Selection:**
 

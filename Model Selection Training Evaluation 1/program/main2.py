@@ -3,6 +3,8 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, classification_report
+from sklearn.externals import joblib  # For model persistence
+
 
 # Load your labeled dataset
 dataset = pd.read_csv('final3.csv')
@@ -28,6 +30,9 @@ model = XGBClassifier(objective='multi:softmax', num_classes=4, random_state=42)
 
 # Train the model
 model.fit(X_train_scaled, y_train)
+
+# Save the model to a file
+joblib.dump(model, 'mark1.joblib')
 
 # Evaluate the model using cross-validation
 cv_accuracy = cross_val_score(model, X_train_scaled, y_train, cv=5, scoring='accuracy')

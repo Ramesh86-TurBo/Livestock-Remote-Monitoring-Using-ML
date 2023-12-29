@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
+                "file": "Model Selection Training Evaluation 1/Procedure.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
+                "file": "Model Selection Training Evaluation 1/Procedure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
+                "file": "Model Selection Training Evaluation 1/Procedure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataPreprocessing/SampleDataset(for testing purpose).md"
+                "file": "Model Selection Training Evaluation 1/Procedure.md"
               }
             }
           }
@@ -173,8 +173,12 @@
   },
   "active": "fa638374680b9c7c",
   "lastOpenFiles": [
-    "Model Selection Training Evaluation 1/program/main3.py",
+    "Model Selection Training Evaluation 1/program/modelSelection.py",
+    "Model Selection Training Evaluation 1/program/pairplot.py",
+    "Overview.md",
     "Model Selection Training Evaluation 1/Procedure.md",
+    "DataPreprocessing/SampleDataset(for testing purpose).md",
+    "Model Selection Training Evaluation 1/program/main3.py",
     "Model Selection Training Evaluation 1/program/main2.py",
     "Model Selection Training Evaluation 1/program/main1.py",
     "Model Selection Training Evaluation 1/program/standardize.py",
@@ -186,10 +190,7 @@
     "DataPreprocessing/exp2/program/main.py",
     "DataPreprocessing/exp2/Feature Extraction.md",
     "DataPreprocessing/exp2/program/final3.csv",
-    "DataPreprocessing/exp2/program",
-    "DataPreprocessing/exp2/New folder",
     "DataPreprocessing/exp2/Data Labellling.md",
-    "DataPreprocessing/SampleDataset(for testing purpose).md",
     "DataPreprocessing/DataCollection.md",
     "DataPreprocessing/DataConversion.md",
     "README.md",
@@ -203,7 +204,6 @@
     "Data Preprocessing 1/steps for reference.md",
     "Data Collection and Cleaning/Sample Dataset(for testing purpose).md",
     "Data Collection and Cleaning/Sensor System.md",
-    "Overview.md",
     "Data Collection and Cleaning/Data Format and Conversion.md",
     "Data Preprocessing 2/Data Labellling.md",
     "Data Preprocessing 2/Feature Extraction.md",
