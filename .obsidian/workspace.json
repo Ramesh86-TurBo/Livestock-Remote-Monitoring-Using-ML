@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Model Selection Training Evaluation 1/Procedure.md",
+                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model Selection Training Evaluation 1/Procedure.md",
+                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model Selection Training Evaluation 1/Procedure.md",
+                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model Selection Training Evaluation 1/Procedure.md"
+                "file": "DataPreprocessing/SampleDataset(for testing purpose).md"
               }
             }
           }
@@ -171,28 +171,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fa638374680b9c7c",
+  "active": "35f75687bda95a26",
   "lastOpenFiles": [
-    "Model Selection Training Evaluation 1/program/modelSelection.py",
-    "Model Selection Training Evaluation 1/program/pairplot.py",
+    "DataPreprocessing/Program/DatasetCleaning/test.py",
+    "~$ module4.docx",
+    "~WRL1206.tmp",
+    "~WRD1163.tmp",
+    "ML module4.docx",
+    "~WRL0255.tmp",
+    "~WRD4050.tmp",
+    "~WRL2831.tmp",
+    "~WRD2612.tmp",
+    "DataPreprocessing/DataCollection.md",
+    "DataPreprocessing/DataConversion.md",
+    "~WRL0694.tmp",
+    "~WRD0608.tmp",
+    "DataPreprocessing/Program/DatasetCleaning/Figure_1.png",
     "Overview.md",
     "Model Selection Training Evaluation 1/Procedure.md",
     "DataPreprocessing/SampleDataset(for testing purpose).md",
-    "Model Selection Training Evaluation 1/program/main3.py",
-    "Model Selection Training Evaluation 1/program/main2.py",
-    "Model Selection Training Evaluation 1/program/main1.py",
-    "Model Selection Training Evaluation 1/program/standardize.py",
-    "Model Selection Training Evaluation 1/program/test.py",
     "DataPreprocessing/exp1/Feature Extraction.md",
     "DataPreprocessing/exp2/Time Windowing.md",
-    "Model Selection Training Evaluation 1/program/final3.csv",
-    "DataPreprocessing/exp1/New folder",
-    "DataPreprocessing/exp2/program/main.py",
     "DataPreprocessing/exp2/Feature Extraction.md",
-    "DataPreprocessing/exp2/program/final3.csv",
     "DataPreprocessing/exp2/Data Labellling.md",
-    "DataPreprocessing/DataCollection.md",
-    "DataPreprocessing/DataConversion.md",
     "README.md",
     "DataPreprocessing/Sample Dataset(for testing purpose).md",
     "DataPreprocessing/DataCollectionandSensorSystem.md",

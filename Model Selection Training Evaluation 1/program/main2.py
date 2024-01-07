@@ -3,8 +3,7 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, classification_report
-from sklearn.externals import joblib  # For model persistence
-
+import joblib  # For model persistence
 
 # Load your labeled dataset
 dataset = pd.read_csv('final3.csv')

@@ -20,9 +20,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Create a list of models to evaluate
 models = [
-    ('Random Forest', RandomForestClassifier(random_state=42)),
-    ('Gradient Boosting', GradientBoostingClassifier(random_state=42)),
-    ('XGBoost', XGBClassifier(random_state=42))
+    ('Random Forest', RandomForestClassifier(n_estimators=100, random_state=42))
 ]
 
 best_model = None
