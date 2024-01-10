@@ -13,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a31d4088219946ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DataPreprocessing/exp2/Time Windowing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fa638374680b9c7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
+                "file": "DataCollection/DataCollection.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
+                "file": "DataCollection/DataCollection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataPreprocessing/SampleDataset(for testing purpose).md",
+                "file": "DataCollection/DataCollection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataPreprocessing/SampleDataset(for testing purpose).md"
+                "file": "DataCollection/DataCollection.md"
               }
             }
           }
@@ -171,48 +146,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35f75687bda95a26",
+  "active": "d4de8c26a8eaa14e",
   "lastOpenFiles": [
-    "DataPreprocessing/Program/DatasetCleaning/test.py",
-    "~$ module4.docx",
-    "~WRL1206.tmp",
-    "~WRD1163.tmp",
-    "ML module4.docx",
-    "~WRL0255.tmp",
-    "~WRD4050.tmp",
-    "~WRL2831.tmp",
-    "~WRD2612.tmp",
-    "DataPreprocessing/DataCollection.md",
-    "DataPreprocessing/DataConversion.md",
-    "~WRL0694.tmp",
-    "~WRD0608.tmp",
-    "DataPreprocessing/Program/DatasetCleaning/Figure_1.png",
+    "~WRL3860.tmp",
+    "~WRD3536.tmp",
+    "Phase1/code.png",
+    "code picture/missing2.PNG",
+    "Phase1/ff.csv",
+    "code picture/missing1.PNG",
+    "~WRL0317.tmp",
+    "~WRD3839.tmp",
+    "code picture/Capture3.PNG",
+    "code picture/Figure_1.png",
+    "code picture/Capture2.PNG",
+    "~WRL2895.tmp",
+    "~WRD2563.tmp",
+    "~WRL0077.tmp",
+    "~WRD3837.tmp",
+    "DataPreprocessing/exp1/dataCleaning/Removing the outliers.md",
+    "DataPreprocessing/exp1/dataCleaning/cleaned_dataset.csv",
+    "DataPreprocessing/exp1/Dataset.md",
+    "~WRL0001.tmp",
+    "DataCollection/DataConversion.md",
+    "Untitled.md",
+    "code picture/code1.png",
+    "DataCollection/Capture.PNG",
+    "DataCollection/DataCollection.md",
+    "DataCollection/SampleDataset(for testing purpose).md",
+    "README.md",
     "Overview.md",
-    "Model Selection Training Evaluation 1/Procedure.md",
-    "DataPreprocessing/SampleDataset(for testing purpose).md",
-    "DataPreprocessing/exp1/Feature Extraction.md",
+    "DataPreprocessing/exp2/Data Labellling.md",
     "DataPreprocessing/exp2/Time Windowing.md",
     "DataPreprocessing/exp2/Feature Extraction.md",
-    "DataPreprocessing/exp2/Data Labellling.md",
-    "README.md",
-    "DataPreprocessing/Sample Dataset(for testing purpose).md",
-    "DataPreprocessing/DataCollectionandSensorSystem.md",
-    "DataPreprocessing/Program/DataCollectionAndConversion/Figure_1.png",
-    "Data Collection and Cleaning/Data Preprocessing 1/Feature Extraction.md",
-    "Data Preprocessing 1/Feature Extraction.md",
-    "Data Collection and Cleaning/Program/DataCollectionAndConversion/Figure_1.png",
-    "Data Collection and Cleaning/Program/DataConversion/Figure_1.png",
-    "Data Preprocessing 1/steps for reference.md",
-    "Data Collection and Cleaning/Sample Dataset(for testing purpose).md",
-    "Data Collection and Cleaning/Sensor System.md",
-    "Data Collection and Cleaning/Data Format and Conversion.md",
-    "Data Preprocessing 2/Data Labellling.md",
-    "Data Preprocessing 2/Feature Extraction.md",
-    "Data Preprocessing 2/Time Windowing.md",
-    "Remote Monitoring/Anomaly Detection For Remote Monitoring.md",
-    "Data Collection and Cleaning/Program/oldProgram/Figure_1.png",
-    "DataCollection/Program/Figure_1.png",
-    "DataCollection/Figure_1.png",
-    "DataCollection/Overview.md"
+    "DataPreprocessing/new technique/Time Windowing.md",
+    "DataPreprocessing/new technique/Feature Extraction.md",
+    "DataPreprocessing/new technique/Data Labellling.md",
+    "DataPreprocessing/newtechnique/Time Windowing.md",
+    "DataPreprocessing/newtechnique/Feature Extraction.md",
+    "DataPreprocessing/newtechnique/Data Labellling.md",
+    "DataCollection/Program/DatasetConversion1/oldCollectionAndConversion/Figure_1.png",
+    "DataCollection/Program/DatasetConversion2/Figure_1.png",
+    "SampleDataset(for testing purpose).md",
+    "DataConversion.md",
+    "DataCollection.md",
+    "DataCollection/DataPreprocessing/exp2/Time Windowing.md",
+    "DataCollection/DataPreprocessing/exp2/Feature Extraction.md",
+    "DataCollection/DataPreprocessing/exp2/Data Labellling.md",
+    "DataCollection/DataPreprocessing/exp1/Feature Extraction.md",
+    "DataPreprocessing/SampleDataset(for testing purpose).md"
   ]
 }
