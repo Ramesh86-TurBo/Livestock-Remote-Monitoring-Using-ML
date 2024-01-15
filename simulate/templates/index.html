@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Accelerometer Data</title>
+    <style>
+        /* Add any additional styling here */
+    </style>
+</head>
+<body>
+    <h1>Real-time Accelerometer Data:</h1>
+    <p id="accelerationX">X: Loading...</p>
+    <p id="accelerationY">Y: Loading...</p>
+    <p id="accelerationZ">Z: Loading...</p>
+
+    <script>
+        function updateAccelerationData() {
+            fetch('/get_latest_acceleration')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('accelerationX').textContent = 'X: ' + data.x;
+                    document.getElementById('accelerationY').textContent = 'Y: ' + data.y;
+                    document.getElementById('accelerationZ').textContent = 'Z: ' + data.z;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        // Update data every 2 seconds (adjust as needed)
+        setInterval(updateAccelerationData, 1000);
+    </script>
+</body>
+</html>
